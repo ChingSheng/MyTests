@@ -9,9 +9,19 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name="scottychang.newthingtest.viewmodel.ViewModelActivity"/>
+        <activity android:name="scottychang.newthingtest.viewmodel.ViewModelActivity">
+
+        </activity>
 
         <activity android:name=".viewmodel.ViewModelInFragmentActivity">
+
+        </activity>
+
+        <activity android:name=".livedata.LiveDataActivity">
+
+        </activity>
+
+        <activity android:name=".lifecyclehandling.WifiStatusActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
                 <category android:name="android.intent.category.LAUNCHER"/>
