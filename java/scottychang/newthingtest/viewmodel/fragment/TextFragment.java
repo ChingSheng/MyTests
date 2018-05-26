@@ -1,4 +1,4 @@
-package scottychang.newthingtest.fragment;
+package scottychang.newthingtest.viewmodel.fragment;
 
 import android.content.Context;
 import android.os.Bundle;

@@ -1,11 +1,12 @@
-package scottychang.newthingtest;
+package scottychang.newthingtest.viewmodel;
 
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.widget.Chronometer;
 
-import scottychang.newthingtest.fragment.ChronometerFragment;
+import scottychang.newthingtest.R;
+import scottychang.newthingtest.viewmodel.fragment.ChronometerFragment;
 
 public class MainFragmentActivity extends AppCompatActivity {
 

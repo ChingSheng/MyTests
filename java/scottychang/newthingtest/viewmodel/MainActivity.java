@@ -1,4 +1,4 @@
-package scottychang.newthingtest;
+package scottychang.newthingtest.viewmodel;
 
 import android.arch.lifecycle.ViewModelProviders;
 import android.os.Bundle;
@@ -7,7 +7,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.widget.Chronometer;
 
-import scottychang.newthingtest.viewmodel.ChronometerViewModel;
+import scottychang.newthingtest.R;
 
 public class MainActivity extends AppCompatActivity {
 

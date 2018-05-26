@@ -1,4 +1,4 @@
-package scottychang.newthingtest.fragment;
+package scottychang.newthingtest.viewmodel.fragment;
 
 import android.arch.lifecycle.ViewModelProviders;
 import android.content.Context;
@@ -16,7 +16,7 @@ import android.widget.Chronometer;
 import scottychang.newthingtest.R;
 import scottychang.newthingtest.viewmodel.ChronometerViewModel;
 
-public class ChronometerFragment extends Fragment{
+public class ChronometerFragment extends Fragment {
 
     private static final String TAG = ChronometerFragment.class.getSimpleName();
 
