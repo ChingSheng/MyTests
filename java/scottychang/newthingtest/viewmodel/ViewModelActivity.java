@@ -9,16 +9,16 @@ import android.widget.Chronometer;
 
 import scottychang.newthingtest.R;
 
-public class MainActivity extends AppCompatActivity {
+public class ViewModelActivity extends AppCompatActivity {
 
-    private static final String TAG = MainActivity.class.getSimpleName();
+    private static final String TAG = ViewModelActivity.class.getSimpleName();
 
     private Chronometer chronometer;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_view_model);
 
         chronometer = findViewById(R.id.chronometer);
 
