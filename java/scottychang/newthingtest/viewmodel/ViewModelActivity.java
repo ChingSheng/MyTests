@@ -12,9 +12,8 @@ import scottychang.newthingtest.R;
 public class ViewModelActivity extends AppCompatActivity {
 
     private static final String TAG = ViewModelActivity.class.getSimpleName();
-
+    
     private Chronometer chronometer;
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
