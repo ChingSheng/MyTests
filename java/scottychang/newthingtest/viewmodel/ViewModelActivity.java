@@ -1,6 +1,7 @@
 package scottychang.newthingtest.viewmodel;
 
 import android.arch.lifecycle.ViewModelProviders;
+import android.content.res.Configuration;
 import android.os.Bundle;
 import android.os.SystemClock;
 import android.support.v7.app.AppCompatActivity;
@@ -12,7 +13,7 @@ import scottychang.newthingtest.R;
 public class ViewModelActivity extends AppCompatActivity {
 
     private static final String TAG = ViewModelActivity.class.getSimpleName();
-    
+
     private Chronometer chronometer;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -21,9 +22,15 @@ public class ViewModelActivity extends AppCompatActivity {
 
         chronometer = findViewById(R.id.chronometer);
 
-        UseViewModel();
+        // UseViewModel();
 
         chronometer.start();
+    }
+
+    @Override
+    public void onConfigurationChanged(Configuration newConfig) {
+        super.onConfigurationChanged(newConfig);
+        Log.d(TAG, "onConfigurationChanged");
     }
 
     private void UseViewModel() {

@@ -38,14 +38,6 @@ public class ChronometerFragment extends Fragment {
         return view;
     }
 
-    private void PushTextFragment() {
-        FragmentManager fm = getActivity().getSupportFragmentManager();
-        fm.beginTransaction().replace(R.id.fragment_container, new TextFragment()).addToBackStack(null).commit();
-
-        // Will not store ChronometerFragment
-        // fm.beginTransaction().replace(R.id.fragment_container, new TextFragment()).commit();
-    }
-
     private void UseViewModel() {
         // Retain if fragment not to onDetached (When activity replace a new one will cause detach)
         // ChronometerViewModel chronometerViewModel = ViewModelProviders.of(this).get(ChronometerViewModel.class);
@@ -61,6 +53,14 @@ public class ChronometerFragment extends Fragment {
         } else {
             chronometer.setBase(chronometerViewModel.getStartDate());
         }
+    }
+
+    private void PushTextFragment() {
+        FragmentManager fm = getActivity().getSupportFragmentManager();
+        fm.beginTransaction().replace(R.id.fragment_container, new TextFragment()).addToBackStack(null).commit();
+
+        // Will not store ChronometerFragment
+        // fm.beginTransaction().replace(R.id.fragment_container, new TextFragment()).commit();
     }
 
     @Override
